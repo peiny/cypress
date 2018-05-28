@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 6
+python:
+  - 2.7
 cache:
   directories:
     - ~/.npm
@@ -9,4 +11,5 @@ install:
   - npm install
   - cypress install
 script:
+  - python application.py
   - $(npm bin)/cypress run

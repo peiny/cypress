@@ -2,15 +2,18 @@ matrix:
   include:
   - language: python
     python: 2.7
+    install:
+      - pip freeze > requirements.txt
   - language: node_js
     node_js: 6
+    install:
+      - npm install
+      - cypress install
 cache:
   directories:
     - ~/.npm
     - node_modules
-install:
-  - npm install
-  - cypress install
+
 script:
   - python application.py
   - $(npm bin)/cypress run

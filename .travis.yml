@@ -9,8 +9,6 @@ cache:
     - node_modules
 install:
   - npm install
-  - npm install cypress --save-dev
   - cypress install
-  - pip freeze > requirements.txt
 script:
   - $(npm bin)/cypress run

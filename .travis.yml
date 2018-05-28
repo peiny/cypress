@@ -3,17 +3,22 @@ matrix:
   - language: python
     python: 2.7
     install:
+      - pip install flask
       - pip freeze > requirements.txt
+    script:
+      - python application.py
+
   - language: node_js
     node_js: 6
     install:
       - npm install
       - cypress install
+    script: 
+      - $(npm bin)/cypress run
 cache:
   directories:
     - ~/.npm
     - node_modules
 
-script:
-  - python application.py
-  - $(npm bin)/cypress run
+
+ 

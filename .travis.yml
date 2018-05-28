@@ -6,6 +6,7 @@ cache:
     - ~/.npm
     - node_modules
 install:
-  - npm install cypress
+  - npm init
+  - npm install cypress --save-dev
 script:
   - $(npm bin)/cypress run --record

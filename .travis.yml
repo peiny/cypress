@@ -1,6 +1,8 @@
-language: node_js
+language: node_js,python
 node_js:
   - 6
+python:
+  - 2.7
 cache:
   directories:
     - ~/.npm
@@ -8,5 +10,6 @@ cache:
 install:
   - npm install
   - cypress install
+  - pip freeze > requirements.txt
 script:
   - $(npm bin)/cypress run

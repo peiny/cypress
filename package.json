@@ -9,7 +9,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^2.1.0"
+    "cypress": "^2.1.0",
+    "wait-on": "^2.1.0"
   },
   "devDependencies": {
     "start-server-and-test": "^1.4.1"

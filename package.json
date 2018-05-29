@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "cypress:open": "cypress open",
-    "start": "webpack-dev-server --hot"
+    "cypress:open": "cypress open"
   },
   "name": "cypress",
   "version": "1.0.0",
@@ -9,7 +8,9 @@
   "dependencies": {
     "cypress": "^2.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "start-server-and-test": "^1.4.1"
+  },
   "author": "",
   "license": "ISC",
   "description": ""

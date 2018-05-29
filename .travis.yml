@@ -5,8 +5,8 @@ matrix:
     node_js: 6
     python: 2.7
     before_install:
-      - pip install --upgrade pip
       - npm i -g npm
+      - pip install --upgrade pip
     install:
       - pip install -r requirements.txt
       - npm install

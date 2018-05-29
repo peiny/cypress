@@ -6,8 +6,10 @@ before_install:
   - npm i -g npm
 install:
   - pip install -r requirements.txt
-  - npm install ci
+  - npm install
+  - npm ci
   - npm install wait-on
+  - cypress install
 script:
   - python application.py -- --silent &
   - wait-on http://localhost:5000

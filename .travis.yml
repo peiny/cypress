@@ -9,7 +9,6 @@ install:
   - npm install
   - npm ci
   - npm install wait-on
-  - npm install cypress
 script:
   - python application.py -- --silent &
   - wait-on http://localhost:5000

@@ -3,7 +3,7 @@
     "cypress:open": "cypress open",
     "start-server": "python application.py",
     "test": "$(npm bin)/cypress run",
-    "ci": "start-server-and-test start-server http://localhost:5000 test"
+    "ci": "start-server-and-test install start-server http://localhost:5000 test"
   },
   "name": "cypress",
   "version": "1.0.0",

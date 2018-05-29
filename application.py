@@ -5,7 +5,7 @@ application = Flask(__name__)
 
 
 @application.route('/test')
-def MBR():
+def test():
 	return render_template('index.html')
 # run the app.
 if __name__ == "__main__":

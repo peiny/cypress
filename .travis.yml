@@ -1,16 +1,16 @@
-language: node_js
-node_js: 6
+language: python
+sudo: false
 python: 2.7
+env: PYTHONPATH=.
 install:
   - pip install -r requirements.txt
-  - npm install
-  - cypress install
+  - npm ci
+before_script:
+  python application.py -- --silent &
 script:
-  - npm run ci
+  - $(npm bin)/cypress run
 cache:
   directories:
     - ~/.npm
     - node_modules
-
-
 

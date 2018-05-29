@@ -1,6 +1,8 @@
 matrix:
   include:
-  - language: python
+  
+  - language: node_js
+    node_js: 6
     python: 2.7
     install:
       - pip install flask
@@ -8,8 +10,9 @@ matrix:
       - npm install
       - cypress install
     script: 
+      - python application.py
       - $(npm bin)/cypress run
-
+      
 cache:
   directories:
     - ~/.npm

@@ -11,7 +11,7 @@ Flask-MySQL==1.4.0
 funcsigs==1.0.2
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 more-itertools==4.1.0
 pluggy==0.6.0
